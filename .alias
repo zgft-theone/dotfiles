@@ -1,0 +1,47 @@
+alias ls='ls --color=auto'
+alias l='ls --color=auto'
+alias ll='ls -lh --color=auto'
+alias la='ls -alh --color=auto'
+alias v='vim'
+alias wn='vim Notes/allnotes.wiki'
+alias waf='vim Notes/after_install/after-install.wiki'
+alias sp='sudo pacman'
+
+clear_trash () {
+	number=$(ls -A ~/.trash/ | wc -l)
+	size=$(if [ $number -gt 0 ]; then echo $(du -sh ~/.trash/ | awk '{print $1}') ; else echo 0; fi)
+	/bin/rm -rf ~/.trash/*
+	/bin/rm -rf ~/.trash/.* 2>/dev/null 
+	echo 'Trash cleared'
+	echo 'Item: '$number
+	echo 'Size: '$size 
+}
+
+alias clrt='clear_trash'
+
+move_to_trash () {
+	mv "$@" ~/.trash &&
+	echo $# "files moved to trash. To clear trash use <clrt>"
+	for arg in "$@"; do echo "$arg"; done
+}
+alias rm='move_to_trash'
+alias prm='/bin/rm'
+
+alias grep="grep --color"
+alias mpvfhd='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"' 
+
+yay2 () {
+	yay "$@" 
+	pkill -SIGRTMIN+20 i3block
+}
+
+pacman2 () {
+	sudo pacman "$@" &&
+	pkill -SIGRTMIN+20 i3block
+}
+
+alias yay="yay2"
+alias pacman="pacman2"
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias ip='ip -c'
