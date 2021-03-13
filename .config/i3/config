@@ -241,7 +241,7 @@ exec --no-startup-id [ $(ps h -C nm-applet | wc -l) = 0 ] && nm-applet
 exec --no-startup-id [ $(ps h -C blueman-applet | wc -l) = 0 ] && blueman-applet
 
 # Spotify - need to install spotifywm from aur
-for_window [class="Spotify"] move container to workspace 8
+#for_window [class="Spotify"] move container to workspace 8
 #for_window [class="Spotify"] $ws8
 assign [class="Spotify"] $ws8
 bindsym $mod+8 workspace $ws8; exec --no-startup-id [ $(ps h -C spotify | wc -l) = 0 ] && /usr/bin/spotify -s;
@@ -262,7 +262,7 @@ bindsym $mod+8 workspace $ws8; exec --no-startup-id [ $(ps h -C spotify | wc -l)
 # Chrome
 #bindsym $mod+1 workspace $ws1; exec [ $(ps h -C chromium | wc -l) = 0 ] && /usr/bin/chromium -s;
 assign [class="Chromium"] $ws1
-exec chromium
+exec chromium --restore-last-session
 
 # Discord
 bindsym $mod+9 workspace $ws9; exec [ $(ps h -C discord | wc -l) = 0 ] && /usr/bin/discord -s;
@@ -380,8 +380,8 @@ bindsym $mod+r exec st -e ranger
 # Change themes
 #bindsym --release $mod+equal exec "wal --theme base16-one -l"
 #bindsym --release $mod+minus exec "wal --theme base16-gruvbox-medium"
-bindsym --release $mod+XF86MonBrightnessUp exec "wal --theme base16-one -l && xsettingsd -c ~/.xsettings-light"
-bindsym --release $mod+XF86MonBrightnessDown exec "wal --theme base16-gruvbox-medium && xsettingsd -c ~/.xsettings-dark"
+bindsym --release $mod+XF86MonBrightnessUp exec "wal --theme base16-one -l -e && xsettingsd -c ~/.xsettings-light"
+bindsym --release $mod+XF86MonBrightnessDown exec "wal --theme base16-gruvbox-medium -e && xsettingsd -c ~/.xsettings-dark"
 #bindsym --release $mod+XF86MonBrightnessUp exec xsettingsd -c ~/.xsettings-light
 #bindsym --release $mod+XF86MonBrightnessDown exec xsettingsd -c ~/.xsettings-dark
 
@@ -394,5 +394,3 @@ bindsym $mod+Shift+Delete exec ~/scripts/shutdown
 
 #Caps_lock
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3block
-
-# 
