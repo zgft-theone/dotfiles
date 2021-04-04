@@ -2,7 +2,7 @@
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
 alias ll='ls -lh --color=auto'
-alias la='ls -alh --color=auto'
+alias la='ls -Alh --color=auto'
 alias v='vim'
 alias sp='sudo pacman'
 alias ip='ip -c'
@@ -45,11 +45,11 @@ alias pacman="pacman2"
 # Specific program config
 alias mpvfhd='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"' 
 
-#Dotfiles to github
+# Dotfiles to github
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # vim wiki Notes
 alias wn='vim Notes/allnotes.wiki'
 alias waf='vim Notes/after_install/after-install.wiki'
 alias wrecept='vim receptek/receptek.wiki'
-
+alias wpy='vim ~/Notes/python/python.wiki'
