@@ -29,6 +29,17 @@ move_to_trash () {
 alias rm='move_to_trash'
 alias prm='/bin/rm'
 
+check_trash () {
+	find ~/.trash -type f
+	number=$(ls -A ~/.trash/ | wc -l)
+	size=$(if [ $number -gt 0 ]; then echo $(du -sh ~/.trash/ | awk '{print $1}') ; else echo 0; fi)
+	echo
+	echo 'Item: '$number
+	echo 'Size: '$size 
+}
+
+alias chkt='check_trash'
+
 yay2 () {
 	yay "$@" 
 	pkill -SIGRTMIN+20 i3block
@@ -49,7 +60,7 @@ alias mpvfhd='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"'
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # vim wiki Notes
-alias wn='vim Notes/allnotes.wiki'
+alias wn='vim $HOME/Notes/allnotes.wiki'
 alias waf='vim Notes/after_install/after-install.wiki'
 alias wrecept='vim receptek/receptek.wiki'
 alias wpy='vim ~/Notes/python/python.wiki'

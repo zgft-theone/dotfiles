@@ -323,7 +323,7 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/milky_way.png
 # Screen lock
 #exec_always --no-startup-id xautolock -time 15 -locker "i3lock -i ~/Pictures/waterdrop.png"
 #exec_always --no-startup-id [ $(ps aux | grep -i "screensaver.sh" | grep -v "grep" | wc -l) = 0 ] && /home/zgft/Dropbox/Projects/screensaver/screensaver.sh
-exec_always  xautolock -time 15 -locker ~/scripts/i3lock.sh
+###exec_always  xautolock -time 15 -locker ~/scripts/i3lock.sh
 
 ### Touchpad
 #exec_always --no-startup-id [ $(ps h -C fusuma | wc -l) = 0 ] && fusuma
