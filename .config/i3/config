@@ -410,3 +410,15 @@ workspace 7 output HDMI1
 workspace 8 output HDMI1
 workspace 9 output HDMI1
 workspace 0 output HDMI1
+
+
+
+#bindsym $mod+p scratchpad show
+#bindsym $mod+i move scratchpad
+
+#bindsym $mod+u exec "if [ $( ps h -C st | grep vimwiki -c ) = 0 ]; then st -n vimwiki vim Notes/allnotes.wiki; fi" ; [instance="vimwiki"] scratchpad show ; [instance="vimwiki"] move position center
+#
+#for_window [instance="vimwiki"] floating enable
+#for_window [instance="vimwiki"] resize set 1000 800
+#for_window [instance="vimwiki"] move scratchpad
+
