@@ -64,3 +64,5 @@ alias wn='vim $HOME/Notes/allnotes.wiki'
 alias waf='vim Notes/after_install/after-install.wiki'
 alias wrecept='vim receptek/receptek.wiki'
 alias wpy='vim ~/Notes/python/python.wiki'
+
+sc() { vim $(du -a ~/scripts/* | awk '{print $2}' | fzf) ;}
