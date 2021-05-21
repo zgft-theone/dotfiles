@@ -422,3 +422,5 @@ workspace 0 output HDMI1
 #for_window [instance="vimwiki"] resize set 1000 800
 #for_window [instance="vimwiki"] move scratchpad
 
+# Redshift
+#exec_always --no-startup-id redshift -l 49.4979:19.0402 -t 6500:4200
