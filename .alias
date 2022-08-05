@@ -1,0 +1,76 @@
+# Basic terminal commands
+alias ls='ls --color=auto'
+alias l='ls --color=auto'
+alias ll='ls -lh --color=auto'
+alias la='ls -Alh --color=auto'
+alias v='vim'
+alias sp='sudo pacman'
+alias ip='ip -c'
+alias grep="grep -E --color -i"
+
+# Level 2 terminal commands
+clear_trash () {
+	number=$(ls -A ~/.trash/ | wc -l)
+	size=$(if [ $number -gt 0 ]; then echo $(du -sh ~/.trash/ | awk '{print $1}') ; else echo 0; fi)
+	/bin/rm -rf ~/.trash/*
+	/bin/rm -rf ~/.trash/.* 2>/dev/null 
+	echo 'Trash cleared'
+	echo 'Item: '$number
+	echo 'Size: '$size 
+}
+
+alias clrt='clear_trash'
+
+move_to_trash () {
+	mv "$@" ~/.trash &&
+	echo $# "files moved to trash. To clear trash use <clrt>"
+	for arg in "$@"; do echo "$arg"; done
+}
+alias rm='move_to_trash'
+alias prm='/bin/rm'
+
+check_trash () {
+	find ~/.trash -type f
+	number=$(ls -A ~/.trash/ | wc -l)
+	size=$(if [ $number -gt 0 ]; then echo $(du -sh ~/.trash/ | awk '{print $1}') ; else echo 0; fi)
+	echo
+	echo 'Item: '$number
+	echo 'Size: '$size 
+}
+
+alias chkt='check_trash'
+
+yay2 () {
+	yay "$@" 
+	pkill -SIGRTMIN+20 i3block
+}
+
+pacman2 () {
+	sudo pacman "$@" &&
+	pkill -SIGRTMIN+20 i3block
+}
+
+alias yay="yay2"
+alias pacman="pacman2"
+
+# Specific program config
+alias mpvfhd='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"' 
+
+# Dotfiles to github
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# vim wiki Notes
+alias wn='vim $HOME/Notes/allnotes.wiki'
+alias waf='vim $HOME/Notes/after_install/after-install.wiki'
+alias wrecept='vim $HOME/receptek/receptek.wiki'
+alias wpy='vim $HOME/Notes/python/python.wiki'
+
+#sc() { vim $(du -a ~/scripts/* | awk '{print $2}' | fzf) ;}
+vs() { du -a ~/scripts/* | awk '{print $2}' | fzf | xargs -o -r vim ;}
+vc() { du -a ~/.config/* | awk '{print $2}' | fzf | xargs -o -r vim ;}
+#tv() { ls -1 ~/tv/* | fzf --layout=reverse| xargs -o -r vlc;}
+
+#alias yayfull="yay -Syu --noupgrademenu --nocleanmenu --nodiffmenu --noconfirm && yes| yay -Scc"
+alias yayfull="yay -Syu --noupgrademenu --nocleanmenu --nodiffmenu --noconfirm"
+
+#alias history="history | cut -d' ' -f5- | uniq | fzf"
