@@ -1,0 +1,49 @@
+swipe:
+  3:
+    left:
+      command: 'xdotool key alt+Left'
+      threshold: 0.2
+    right:
+      command: 'xdotool key alt+Right'
+      threshold: 0.2
+    up:
+      command:
+      threshold: 1.5
+    down:
+      command:
+      threshold: 1.5
+  4:
+    left:
+      command: 'xdotool key super+Shift+Tab'
+      threshold: 1
+      interval: 0.5
+    right:
+      command: 'xdotool key super+Tab'
+      threshold: 1
+      interval: 0.5
+    up:
+      command: 'amixer -D pulse sset Master 10%+'
+      interval: 0.1
+      threshold: 0.1
+    down:
+      command: 'amixer -D pulse sset Master 10%-'
+      interval: 0.1
+      threshold: 0.1
+pinch:
+  2:
+    in:
+      command: 'xdotool key ctrl+plus'
+      threshold: 0.5
+    out:
+      command: 'xdotool key ctrl+minus'
+      threshold: 0.5
+  3:
+    in:
+      command: 'xdotool key ctrl+w'
+threshold:
+  swipe: 0.5
+  pinch: 0.5
+
+interval:
+  swipe: 0.5
+  pinch: 0.5

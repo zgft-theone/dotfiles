@@ -1,0 +1,19 @@
+[commands.swipe.three]
+left_up = ""
+right_up = ""
+up = "xdotool key ctrl+t"
+left_down = ""
+right_down = ""
+down = "xdotool key ctrl+w"
+left = "xdotool key alt+Left"
+right = "xdotool key alt+Right"
+
+[commands.swipe.four]
+left_up = ""
+right_up = ""
+up = "amixer -D pulse sset Master 5%+"
+left_down = ""
+right_down = ""
+down = "amixer -D pulse sset Master 5%-"
+left = "xdotool key super+Shift+Tab"
+right = "xdotool key super+Tab"

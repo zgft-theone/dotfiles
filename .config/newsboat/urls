@@ -1,0 +1,91 @@
+"query:Starred Articles:flags # \"s\""
+
+
+"--- Helyi hirek ---"
+https://www.kemence.hu/?q=rss.xml
+https://www.budapest13.hu/feed/bp13hirek
+"--- Linux ---"
+http://feeds.feedburner.com/tecmint
+https://lukesmith.xyz/rss.xml
+http://www.linuxtechi.com/feed/
+https://www.cyberciti.com/atom/atom.xml
+https://www.linuxjournal.com/node/feed
+
+"--- Linux updates ---"
+https://www.debian.org/News/news
+https://micronews.debian.org/feeds/feed.rss
+#Mikrotik
+https://mikrotik.com/download.rss
+https://archlinux.org/feeds/news/
+"--- Home Assistant ---"
+#https://community.home-assistant.io/latest.rss
+https://github.com/home-assistant/core/releases.atom
+
+"--- Youtube ---"
+http://handras.hu/?feed=rss2
+# magyarosi csaba
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRJovKcgUL7QumDE1YsLqzg
+# Polgar net
+https://www.youtube.com/feeds/videos.xml?channel_id=UCU18RaTq_p7oomp8TiHd1jg
+# Itt van amerika
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJF6VXUAEV7caoIFeXcm-qQ "~Itt van amerika - Gombos Edina"
+
+# Videomania
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVoGCDIv8h3OkzZYySWK6lw
+# TheVr
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrpWCVp9FuGA8OnGtA0rgsw
+# TheVr Tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDeRsDqcB8zdkzErxrdHCOw
+# TheVr streamek
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSFMCn1xtj_4kOy6KNK_fNg
+# VR podcast
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTY9vSAwOVsXw1lE1vBD0Hg
+
+# Zsozeatya
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkXZcdClprjcI4gWeFuB7Qw
+
+# Chris Titus Tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCg6gPGh8HU2U01vaFCAsvmQ
+# Titus Tech Talk
+https://www.youtube.com/feeds/videos.xml?channel_id=UCtYg149E_wUGVmjGz-TgyNA
+# Luke Smith
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA
+# Brodie Robertson
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA
+# DistroTube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg
+# Bugs Writer
+https://www.youtube.com/feeds/videos.xml?channel_id=UCngn7SVujlvskHRvRKc1cTw
+# Terminal for life
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfp-lNJy4QkIGnaEE6NtDSg
+# Network Chuck
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ
+# Linus Tech Tips
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw
+# Learn Linux tv
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxQKHvKbmSzGMvUrVtJYnUA
+# Lawrence
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHkYOD-3fZbuGhwsADBd9ZQ
+# Tall paul tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCcmw3P6BDUFA4h3Y_FpsB_w
+
+"--- Magyar kozelet ---"
+# Telex
+https://www.youtube.com/feeds/videos.xml?channel_id=UCM-1sd-cXSuCsfWp8QMY_OQ
+# Index
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKY8HrMpm32WAMK0lauLAZA
+# 444
+https://www.youtube.com/feeds/videos.xml?channel_id=UCGoLa-QhHmTxLEdjv_8dxrg
+# Gasztroangyal
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVVcdNtVMBQG5DM-cQCt90w
+
+
+#https://www.youtube.com/feeds/videos.xml?channel_id=
+
+"--- Podcast ---"
+https://feeds.simplecast.com/0DnB_pfV
+
+"--- Tutorial ---"
+https://www.youtube.com/feeds/videos.xml?playlist_id=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70
+
+https://morss.it/:items=%7C%7C*[class=uad-title]%7C%7Ch1%7Ca/https://hardverapro.hu/aprok/pc_szerver/pc/mini_pc_barebone_pc/kartyameretu_pc_raspberry_stb/keres.php?stext_none=&search_exac=0&search_title=0&stext=&shipping=0&buying=&noiced=0
