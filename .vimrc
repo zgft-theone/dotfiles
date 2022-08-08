@@ -46,6 +46,7 @@ Plug 'morhetz/gruvbox'
 Plug 'chriskempson/base16-vim'
 Plug 'tomasr/molokai'
 Plug 'altercation/vim-colors-solarized'
+Plug 'aserebryakov/vim-todo-lists'
 "Plug 'valloric/youcompleteme'
 
 call plug#end()

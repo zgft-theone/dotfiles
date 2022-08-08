@@ -64,6 +64,7 @@ alias wn='vim $HOME/Notes/allnotes.wiki'
 alias waf='vim $HOME/Notes/after_install/after-install.wiki'
 alias wrecept='vim $HOME/receptek/receptek.wiki'
 alias wpy='vim $HOME/Notes/python/python.wiki'
+alias todo='vim $HOME/to_do/to_do.todo.md'
 
 #sc() { vim $(du -a ~/scripts/* | awk '{print $2}' | fzf) ;}
 vs() { du -a ~/scripts/* | awk '{print $2}' | fzf | xargs -o -r vim ;}
