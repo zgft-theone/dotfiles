@@ -400,8 +400,10 @@ bindsym --release $mod+XF86MonBrightnessUp exec $HOME/scripts/light-theme
 bindsym --release $mod+XF86MonBrightnessDown exec $HOME/scripts/dark-theme
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 4 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 4 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 4 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 4 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec brightness inc # increase screen brightness
+bindsym XF86MonBrightnessDown exec brightness dec # decrease screen brightness
 
 # Shutdown 
 bindsym $mod+Shift+Delete exec ~/scripts/shutdown
